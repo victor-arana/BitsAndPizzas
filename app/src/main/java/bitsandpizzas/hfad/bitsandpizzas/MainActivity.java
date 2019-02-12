@@ -2,6 +2,7 @@ package bitsandpizzas.hfad.bitsandpizzas;
 
 import android.content.Intent;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -31,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
                     new SectionsPagerAdapter(getSupportFragmentManager());
         ViewPager pager = findViewById(R.id.pager);
         pager.setAdapter(pagerAdapter);
+
+        // Attach the viewPager to the TabLayout
+        TabLayout tabLayout = findViewById(R.id.pager);
+        tabLayout.setupWithViewPager(pager);
     }
 
     @Override
