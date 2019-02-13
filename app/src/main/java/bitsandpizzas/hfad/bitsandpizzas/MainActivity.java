@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         pager.setAdapter(pagerAdapter);
 
         // Attach the viewPager to the TabLayout
-        TabLayout tabLayout = findViewById(R.id.pager);
+        TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(pager);
     }
 
