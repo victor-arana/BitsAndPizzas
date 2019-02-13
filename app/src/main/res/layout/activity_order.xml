@@ -11,4 +11,16 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar_main"/>
 
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/order_name_hint"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/order_details_hint"/>
+
 </LinearLayout>
