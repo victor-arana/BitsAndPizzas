@@ -11,16 +11,23 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar_main"/>
 
-
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/order_name_hint"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/order_details_hint"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_name_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_details_hint"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
