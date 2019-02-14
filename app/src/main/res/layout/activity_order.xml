@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"/>
 
-    <ScrollView
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="false">
@@ -40,8 +41,7 @@
 
         </LinearLayout>
 
-    </ScrollView>
-
+    </android.support.v4.widget.NestedScrollView>
 
 
 </LinearLayout>
