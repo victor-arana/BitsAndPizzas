@@ -1,5 +1,6 @@
 package bitsandpizzas.hfad.bitsandpizzas;
 
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,8 +31,12 @@ public class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImages
     }
 
     public static class ViewHolder  extends RecyclerView.ViewHolder{
-        public ViewHolder(View itemView) {
+
+        private CardView cardView;
+
+        public ViewHolder(CardView itemView) {
             super(itemView);
+            cardView = itemView;
         }
     }
 }
